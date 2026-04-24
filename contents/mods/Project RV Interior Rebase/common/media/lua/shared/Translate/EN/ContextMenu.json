@@ -1,0 +1,13 @@
+{
+    "ContextMenu_PRVIR_Exit_RV": "Exit RV",
+    "ContextMenu_PRVIR_Dashboard": "RV Dashboard",
+    "ContextMenu_PRVIR_NoDestroy": "I shouldn't destroy the vehicle...",
+    "ContextMenu_PRVIR_AdminSubMenu": "RV Interior",
+    "ContextMenu_PRVIR_RvInfo": "Info",
+    "ContextMenu_PRVIR_UnlinkVehicle": "Unlink Vehicle",
+    "ContextMenu_PRVIR_ConfirmUnlinkVehicleMessage": "Confirm Unlink Vehicle?",
+    "ContextMenu_PRVIR_UnlinkLot": "Unlink Lot",
+    "ContextMenu_PRVIR_ConfirmUnlinkLotMessage": "Confirm Unlink Lot?",
+    "ContextMenu_PRVIR_TeleportHaywire": "This isn't right...",
+    "ContextMenu_PRVIR_CustomLink": "Custom Link"
+}

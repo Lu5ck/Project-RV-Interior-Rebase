@@ -1,0 +1,9 @@
+name=Project RV Interior Rebase Expansion 2
+id=ProjectRVInteriorRebaseExpansion2
+description=Patch RV Interior Expansion 2 for PRVR
+versionMin=42.0
+author=Lu5ck
+require=\RVInteriorExpansionPart2,\ProjectRVInteriorRebase
+loadModAfter=\RVInteriorExpansionPart2,\ProjectRVInteriorRebase
+category=features
+url=https://ko-fi.com/zomboidkwrr

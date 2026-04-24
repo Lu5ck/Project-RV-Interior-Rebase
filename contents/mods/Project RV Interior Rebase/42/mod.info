@@ -1,0 +1,10 @@
+name=Project RV Interior Rebase
+id=ProjectRVInteriorRebase
+description=Fork of Project RV Interior
+versionMin=42.0
+author=Lu5ck
+category=features
+poster=poster.png
+require=\PROJECTRVInterior42
+loadModAfter=\PROJECTRVInterior42
+url=https://ko-fi.com/zomboidkwrr
