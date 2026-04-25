@@ -1,0 +1,9 @@
+name=Project RV Interior Rebase Military Expansion 1
+id=ProjectRVInteriorRebaseMilitaryExpansion1
+description=Patch RV Military Addon for PRVR
+versionMin=42.0
+author=Lu5ck
+require=\ProjectRVInteriorRebase,\RVmilitaryaddon
+loadModAfter=\ProjectRVInteriorRebase,\RVmilitaryaddon
+category=features
+url=https://ko-fi.com/zomboidkwrr
