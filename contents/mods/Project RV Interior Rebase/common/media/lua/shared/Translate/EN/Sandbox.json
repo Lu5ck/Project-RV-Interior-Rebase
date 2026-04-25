@@ -11,5 +11,5 @@
     "Sandbox_PRVIR_FastMoveExpiry": "[Experimental] Anti Cheat Bypass Timeout",
     "Sandbox_PRVIR_FastMoveExpiry_tooltip": "Anti cheat not implemented to test this, real life seconds",
     "Sandbox_PRVIR_CustomVehicles": "Custom Vehicles",
-    "Sandbox_PRVIR_CustomVehicles_tooltip": "Base.Van=normal;Base.Van2=small - Restart to Apply"
+    "Sandbox_PRVIR_CustomVehicles_tooltip": "Base.Van=normal;Base.Van2=small - case sensitive, restart to apply"
 }
