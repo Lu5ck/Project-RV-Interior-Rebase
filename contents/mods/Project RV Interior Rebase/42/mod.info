@@ -6,5 +6,5 @@ author=Lu5ck
 category=features
 poster=poster.png
 require=\PROJECTRVInterior42
-loadModAfter=\PROJECTRVInterior42
+loadModAfter=\PROJECTRVInterior42,\AnotherVehicleClaimSystem
 url=https://ko-fi.com/zomboidkwrr
