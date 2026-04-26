@@ -195,8 +195,8 @@ function PRVIR.parseVehiclesSandbox()
     local customString = SandboxVars.PRVIR.CustomVehicles
     if not customString then return end
     for entry in customString:gmatch("[^;]+") do
-        local vehicle, vtype = entry:match("^(.+)=(.+)$")
-        if vehicle and vtype then
+        local vehicle, vtype = entry:match("^%s*(.-)%s*=%s*(.-)%s*$")
+        if vehicle and vtype and vehicle ~= "" and vtype ~= "" then
             PRVIR.vehiclesData[vehicle] = vtype
         end
     end
