@@ -18,6 +18,9 @@ function ISPRVIREnterRVAction:stop()
 end
 
 function ISPRVIREnterRVAction:perform()
+    if self.seat and self.character:getVehicle() then
+        self.vehicle:exit(self.character)
+    end
     ISBaseTimedAction.perform(self)
 end
 
