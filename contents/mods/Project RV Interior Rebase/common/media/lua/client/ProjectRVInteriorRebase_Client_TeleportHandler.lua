@@ -68,7 +68,7 @@ function PRVIR.tpFindVehicle(vehicleID)
     local foundVehicle = false
 
     if vehicle then
-        if PRVIR.getVehicleID(vehicle) == "vehicleID" then
+        if PRVIR.getVehicleID(vehicle) == vehicleID then
             foundVehicle = true
             return vehicle
         end
