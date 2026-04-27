@@ -148,6 +148,9 @@ function PRVIR.tpPositionToVehicleTick()
                         vehicle:enter(seat, PRVIR.tpTickPlayer)
                         vehicle:setCharacterPosition(PRVIR.tpTickPlayer, seat, "inside")
                         vehicle:transmitCharacterPosition(seat, "inside")
+                    else
+                        vehicle:setCharacterPosition(PRVIR.tpTickPlayer, PRVIR.tpTickArg.seat, "outside")
+                        vehicle:transmitCharacterPosition(PRVIR.tpTickArg.seat, "outside")
                     end
                 else
                     vehicle:enter(seat, PRVIR.tpTickPlayer)
