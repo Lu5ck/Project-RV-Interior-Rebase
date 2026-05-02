@@ -44,7 +44,7 @@ end
 
 -- Decorate this if adding new region
 function PRVIR.isCoordinateInRvRegion(vX, vY, vZ)
-    if vX >= 22500 and vX <= 25000 and vY >= 12000 and vY <= 12500 then
+    if vX >= 22272 and vX <= 25087 and vY >= 11776 and vY <= 12799 then
         return true
     end
 

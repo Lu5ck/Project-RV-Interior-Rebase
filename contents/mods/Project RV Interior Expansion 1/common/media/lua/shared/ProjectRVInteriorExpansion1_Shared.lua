@@ -7,7 +7,7 @@ if PRVIR and PRVIR.isCoordinateInRvRegion then
         ProjectRVInteriorExpansion1.oIsCoordinateInRvRegion = PRVIR.isCoordinateInRvRegion
     end
     function PRVIR.isCoordinateInRvRegion(vX, vY, vZ)
-        if vX >= 26100 and vX <= 28500 and vY >= 25800 and vY <= 28000 then
+        if vX >= 25856 and vX <= 28671 and vY >= 25600 and vY <= 28415 then
             return true
         end
         return ProjectRVInteriorExpansion1.oIsCoordinateInRvRegion(vX, vY, vZ)
