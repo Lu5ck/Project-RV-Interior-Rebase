@@ -11,6 +11,11 @@ function PRVIR.ISRVInteriorDashboard:initialise()
     local lotID = PRVIR.getPlayerAtWhichLot(self.character)
     local lotClass, lotIndex = PRVIR.getLotClassID(lotID)
 
+    if not lotClass or not lotIndex then
+        self:onClose()
+        self.character:setHaloNote(getText("IGUI_PRVIR_No_Lot_Found"), 250, 250, 250, 300)
+        return false
+    end
     local lot = PRVIR.lots[lotClass]
     local room = lot.rooms[lotIndex]
     local z = room.sz + lot.genFloor
@@ -33,7 +38,6 @@ function PRVIR.ISRVInteriorDashboard:initialise()
             end
         end
     end
-
     self.curSquare = self.character:getSquare()
     ISPanel.initialise(self)
 end
@@ -234,7 +238,7 @@ function PRVIR.ISRVInteriorDashboard:refreshData()
     self.lblWaterMax:setName("NIL")
     self.btnAddWater:setVisible(false)
 
-    if self.generatorObj:getObjectIndex() ~= -1 then
+    if self.generatorObj and self.generatorObj:getObjectIndex() ~= -1 then
         local fuelPercentage = self.generatorObj:getFuelPercentage()
         local generatorCondition = self.generatorObj:getCondition()
         self.barFuel:setProgress(fuelPercentage / 100)
@@ -284,7 +288,7 @@ function PRVIR.ISRVInteriorDashboard:refreshData()
         end
     end
 
-    if #self.waterObj > 0  then
+    if self.waterObj and #self.waterObj > 0  then
         local amount, total = 0, 0
         for i, object in ipairs(self.waterObj) do
             if object:getObjectIndex() ~= -1 then
