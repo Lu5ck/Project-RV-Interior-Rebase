@@ -64,12 +64,13 @@ function PRVIR.ClientEveryHours()
     local lotID = PRVIR.getPlayerAtWhichLot(getPlayer())
     if lotID then
         local tempArr = PRVIR.getUpdateLotLastVisitedDateTime(lotID)
-
+        if tempArr then
         -- Exclude client, includes server / sp / self host
-        if not (isClient() and not isServer()) then
-            PRVIR.updateLotLastVisitedDateTime(tempArr)
-        else
-            sendClientCommand(player, "PRVIR", "updateServerLotLastVisitedDateTime", tempArr)
+            if not (isClient() and not isServer()) then
+                PRVIR.updateLotLastVisitedDateTime(tempArr)
+            else
+                sendClientCommand(player, "PRVIR", "updateServerLotLastVisitedDateTime", tempArr)
+            end
         end
     end
 end
