@@ -208,6 +208,17 @@ function PRVIR.linkVehicleLot(playerObj, args)
 
 end
 
+function PRVIR.updateSquareModData(squareX, squareY, squareZ, args)
+	if not squareX or not squareY or not squareZ then return end
+	local square = getSquare(squareX, squareY, squareZ)
+	if square then
+		square:getModData().PRVIR_LotID = args.lotID
+		if isServer() then
+			square:transmitModData()
+		end
+	end
+end
+
 -- Limit call to specific functions for security reason
 PRVIR.OnClientCommand = function(moduleName, command, playerObj, args)
     if moduleName == "PRVIR" then
@@ -222,7 +233,8 @@ PRVIR.OnClientCommand = function(moduleName, command, playerObj, args)
 				command == "unlinkVehicle" or
 				command == "updateServerPlayerTeleportCompleted" or
 				command == "updateServerVehicleCoordinate" or
-				command == "updateServerLotLastVisitedDateTime" then
+				command == "updateServerLotLastVisitedDateTime" or
+				command == "updateSquareModData" then
             	PRVIR[command](playerObj, args)
 			end
         end

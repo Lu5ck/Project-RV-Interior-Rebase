@@ -12,15 +12,17 @@ function PRVIR.getPlayerAtWhichLot(playerObj)
                 if square:getBuilding() then
                     local px = math.floor(playerObj:getX())
                     local py = math.floor(playerObj:getY())
+                    local pz = math.floor(playerObj:getZ())
                     for lotName, lotData in pairs(PRVIR.lots) do
                         if lotData.rooms then
                             for i, room in ipairs(lotData.rooms) do
-                                if px >= room.sx and px <= room.ex and py >= room.sy and py <= room.ey then
+                                if px >= room.sx and px <= room.ex and py >= room.sy and py <= room.ey and pz >= room.sz and pz <= room.ez then
                                     local lotID = lotName .. "_" .. i
-                                    --square:getModData().PRVIR_LotID = lotID
-                                    --if isServer() then
-                                    --    square:transmitModData()
-                                    --end
+                                    if isClient() and not isServer() then
+                                        sendClientCommand(player, "PRVIR", "updateSquareModData", { lotID = lotID })
+                                    else
+                                        PRVIR.updateSquareModData(px, py, pz, { lotID = lotID })
+                                    end
                                     return lotID
                                 end
                             end

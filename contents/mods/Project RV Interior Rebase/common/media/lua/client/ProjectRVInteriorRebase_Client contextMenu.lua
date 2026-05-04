@@ -172,7 +172,7 @@ function PRVIR.getAdminContextMenu(context, playerNum)
     return rvSubMenu
 end
 
-function PRVIR.doAdminInfoTooltip(context, vehicleID, lotID)
+function PRVIR.doAdminInfoTooltip(context, vehicleID, lotID, square)
     local lot
     local vehicle
 
@@ -209,6 +209,17 @@ function PRVIR.doAdminInfoTooltip(context, vehicleID, lotID)
     infoText = infoText .. "Index = " .. (lotIndex or "") .. "\n"
     infoText = infoText .. "Assigned = " .. (lot and lot.AssignedDateTime and os.date("%d-%b-%y, %H:%M:%S", lot.AssignedDateTime) or "") .. "\n"
     infoText = infoText .. "Last Visited = " .. (lot and lot.LastVisitedDateTime and os.date("%d-%b-%y, %H:%M:%S", lot.LastVisitedDateTime) or "") .. "\n"
+
+    local squareInfo = "NIL"
+    if square then
+        if square:getModData().PRVIR_LotID then
+            squareInfo = "Yes"
+        else
+            squareInfo = "No"
+        end
+    end
+    infoText = infoText .. "Sq ModData = " .. squareInfo
+
     infoText = infoText .. "\nVehicle info\n"
     infoText = infoText .. "ID = " .. (vehicleID or "") .. "\n"
     local vehicleLocation
@@ -245,7 +256,7 @@ if ISVehicleMenu and not PRVIR.oMenuOutsideVehicle then
         if (not isClient() and not isServer()) or playerObj:getRole():hasCapability(Capability.ManipulateVehicle) then
             local vehicleID = PRVIR.getVehicleID(vehicle)
             local rvMenu = PRVIR.getAdminContextMenu(context, playerNum)
-            PRVIR.doAdminInfoTooltip(rvMenu, vehicleID, nil)
+            PRVIR.doAdminInfoTooltip(rvMenu, vehicleID, nil, nil)
             rvMenu:addOption(getText("ContextMenu_PRVIR_CustomLink"), playerNum, PRVIR.openISRVInteriorCustomLink, vehicle)
             if vehicleID and PRVIR.dbByVehicleID[vehicleID] then
                 rvMenu:addOption(getText("ContextMenu_PRVIR_UnlinkVehicle"), playerNum, PRVIR.dialogueConfirm, getText("ContextMenu_PRVIR_ConfirmUnlinkVehicleMessage"), "unlinkVehicle", vehicle)
@@ -270,7 +281,7 @@ function PRVIR.OnFillWorldObjectContextMenu(playerNum, context, worldObjects)
             local lotID = PRVIR.getPlayerAtWhichLot(playerObj)
             if lotID then
                 local rvMenu = PRVIR.getAdminContextMenu(context, playerNum)
-                PRVIR.doAdminInfoTooltip(rvMenu, nil, lotID)
+                PRVIR.doAdminInfoTooltip(rvMenu, nil, lotID, playerObj:getSquare())
 
                 if PRVIR.dbByLotID[lotID] then
                     rvMenu:addOption(getText("ContextMenu_PRVIR_UnlinkLot"), playerNum, PRVIR.dialogueConfirm, getText("ContextMenu_PRVIR_ConfirmUnlinkLotMessage"), "unlinkLot", lotID)
