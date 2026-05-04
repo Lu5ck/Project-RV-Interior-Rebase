@@ -37,9 +37,8 @@ function PRVIR.enterRV(playerObj, vehicle, seat, partID)
     ISTimedActionQueue.add(ISPRVIREnterRVAction:new(playerObj, vehicle, seat, partID))
 end
 
-function PRVIR.exitRV(playerObj)
-    local lotID = PRVIR.getPlayerAtWhichLot(playerObj)
-    if PRVIR.getPlayerAtWhichLot(playerObj) then
+function PRVIR.exitRV(playerObj, lotID)
+    if lotID then
         ISTimedActionQueue.add(ISPRVIRExitRVAction:new(playerObj, lotID))
     else
         playerObj:setHaloNote(getText("IGUI_PRVIR_No_Lot_Found"), 250, 250, 250, 300)
@@ -267,19 +266,20 @@ end
 
 function PRVIR.OnFillWorldObjectContextMenu(playerNum, context, worldObjects)
     local playerObj = getSpecificPlayer(playerNum)
+
     if PRVIR.isPlayerInRvRegion(playerObj) then
-        local option = context:addOption(getText("ContextMenu_PRVIR_Exit_RV"), playerObj, PRVIR.exitRV)
-        if option then
-			option.iconTexture = getTexture("media/textures/rvInteriorEnter.png")
-		end
+        local lotID = PRVIR.getPlayerAtWhichLot(playerObj)
+        if lotID then
+            local option = context:addOption(getText("ContextMenu_PRVIR_Exit_RV"), playerObj, PRVIR.exitRV, lotID)
+            if option then
+                option.iconTexture = getTexture("media/textures/rvInteriorEnter.png")
+            end
 
-        if ISWorldObjectContextMenu.fetchVars.lightSwitch then
-            context:addOption(getText("ContextMenu_PRVIR_Dashboard"), playerObj, PRVIR.openRvDashboard, ISWorldObjectContextMenu.fetchVars.lightSwitch)
-        end
+            if ISWorldObjectContextMenu.fetchVars.lightSwitch then
+                context:addOption(getText("ContextMenu_PRVIR_Dashboard"), playerObj, PRVIR.openRvDashboard, ISWorldObjectContextMenu.fetchVars.lightSwitch)
+            end
 
-        if (not isClient() and not isServer()) or playerObj:getRole():hasCapability(Capability.ManipulateVehicle) then
-            local lotID = PRVIR.getPlayerAtWhichLot(playerObj)
-            if lotID then
+            if (not isClient() and not isServer()) or playerObj:getRole():hasCapability(Capability.ManipulateVehicle) then
                 local rvMenu = PRVIR.getAdminContextMenu(context, playerNum)
                 PRVIR.doAdminInfoTooltip(rvMenu, nil, lotID, playerObj:getSquare())
 
