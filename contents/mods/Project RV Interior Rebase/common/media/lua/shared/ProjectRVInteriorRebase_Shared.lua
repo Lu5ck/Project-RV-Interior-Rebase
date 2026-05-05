@@ -19,9 +19,9 @@ function PRVIR.getPlayerAtWhichLot(playerObj)
                                 if px >= room.sx and px <= room.ex and py >= room.sy and py <= room.ey and pz >= room.sz and pz <= room.ez then
                                     local lotID = lotName .. "_" .. i
                                     if isClient() and not isServer() then
-                                        sendClientCommand(player, "PRVIR", "updateSquareModData", { lotID = lotID })
+                                        sendClientCommand(player, "PRVIR", "updateSquareModData", { squareX = px, squareY = py, squareZ = pz, lotID = lotID })
                                     else
-                                        PRVIR.updateSquareModData(px, py, pz, { lotID = lotID })
+                                        PRVIR.updateSquareModData(playerObj, { squareX = px, squareY = py, squareZ = pz, lotID = lotID })
                                     end
                                     return lotID
                                 end

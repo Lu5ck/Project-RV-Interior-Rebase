@@ -208,9 +208,9 @@ function PRVIR.linkVehicleLot(playerObj, args)
 
 end
 
-function PRVIR.updateSquareModData(squareX, squareY, squareZ, args)
-	if not squareX or not squareY or not squareZ then return end
-	local square = getSquare(squareX, squareY, squareZ)
+function PRVIR.updateSquareModData(playerObj, args)
+	if not args.squareX or not args.squareY or not args.squareZ or not args.lotID then return end
+	local square = getSquare(args.squareX, args.squareY, args.squareZ)
 	if square then
 		square:getModData().PRVIR_LotID = args.lotID
 		if isServer() then
