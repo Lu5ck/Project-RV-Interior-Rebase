@@ -81,7 +81,7 @@ function PRVIR.trackVehiclePositionTick()
         local vehicle = player:getVehicle()
         local vehicleID = PRVIR.getVehicleID(vehicle)
         if vehicle then
-            if vehicleID and PRVIR.dbByVehicleID[vehicleID] then
+            if vehicleID and PRVIR.dbByVehicleID and PRVIR.dbByVehicleID[vehicleID] then
                 local tempArr = PRVIR.getUpdateVehicleCoordinate(vehicle, vehicleID)
                 if tempArr then
                     sendClientCommand(player, "PRVIR", "updateServerVehicleCoordinate", tempArr)
@@ -90,7 +90,7 @@ function PRVIR.trackVehiclePositionTick()
 
             vehicle = vehicle:getVehicleTowing()
             vehicleID = PRVIR.getVehicleID(vehicle)
-            if vehicleID and PRVIR.dbByVehicleID[vehicleID] then
+            if vehicleID and PRVIR.dbByVehicleID and PRVIR.dbByVehicleID[vehicleID] then
                 local tempArr = PRVIR.getUpdateVehicleCoordinate(vehicle, vehicleID)
                 if tempArr then
                     sendClientCommand(player, "PRVIR", "updateServerVehicleCoordinate", tempArr)
