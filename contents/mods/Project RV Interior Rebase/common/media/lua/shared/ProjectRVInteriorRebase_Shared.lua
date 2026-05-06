@@ -140,7 +140,7 @@ function PRVIR.getUpdateVehicleCoordinate(vehicle, vehicleID)
 end
 
 function PRVIR.updateVehicleCoordinate(args)
-	if not args and not args.VehicleID and not args.LastLocationX and not args.LastLocationY and not args.LastLocationZ and not args.LastLocationUpdateDateTime then return end
+	if not args and not args.VehicleID and not args.LastLocationX and not args.LastLocationY and not args.LastLocationZ and not args.LastLocationUpdateDateTime and not PRVIR.dbByVehicleID then return end
     if PRVIR.dbByVehicleID[args.VehicleID] then
         PRVIR.dbByVehicleID[args.VehicleID].LastLocationX = args.LastLocationX
         PRVIR.dbByVehicleID[args.VehicleID].LastLocationY = args.LastLocationY
