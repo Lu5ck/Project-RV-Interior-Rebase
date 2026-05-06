@@ -213,9 +213,6 @@ function PRVIR.updateSquareModData(playerObj, args)
 	local square = getSquare(args.squareX, args.squareY, args.squareZ)
 	if square then
 		square:getModData().PRVIR_LotID = args.lotID
-		if isServer() then
-			square:transmitModData()
-		end
 	end
 end
 
