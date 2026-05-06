@@ -1152,7 +1152,7 @@ PRVIR.lots["Vanampotato"] = {
 
 -- 73winne (Base.73Winnebago)
 PRVIR.lots["73winne"] = {
-    teleportOffset = { x = 1.5 y = 5.5 },
+    teleportOffset = { x = 1.5, y = 5.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
