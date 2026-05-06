@@ -58,8 +58,6 @@ PRVIR.lots["Vanillastepvanmail"] = PRVIR.lots["Vanillastepvanmail"] or {}
 PRVIR.lots["Vanillastepswat"] = PRVIR.lots["Vanillastepswat"] or {}
 PRVIR.lots["Vanillastepplonkies"] = PRVIR.lots["Vanillastepplonkies"] or {}
 PRVIR.lots["Vanillastepscarlet"] = PRVIR.lots["Vanillastepscarlet"] or {}
-PRVIR.lots["Vanillastepvansmartkut"] = PRVIR.lots["Vanillastepvansmartkut"] or {}
-PRVIR.lots["Vanillamobilelibrasry"] = PRVIR.lots["Vanillamobilelibrasry"] or {}
 PRVIR.lots["vanillavan"] = PRVIR.lots["vanillavan"] or {}
 PRVIR.lots["Vanambulance"] = PRVIR.lots["Vanambulance"] or {}
 PRVIR.lots["VanMAIL3"] = PRVIR.lots["VanMAIL3"] or {}
@@ -85,7 +83,7 @@ PRVIR.lots["camptrailer"] = PRVIR.lots["camptrailer"] or {}
 
 -- Trailer (Base.TrailerKI5cargoLarge)
 PRVIR.lots["Trailer"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -112,34 +110,34 @@ PRVIR.lots["Trailer"] = {
 
 -- Trailer2 (Base.TrailerKI5cargoMedium)
 PRVIR.lots["Trailer2"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
-    roomWidth = 3, roomHeight = 4,
+    roomWidth = 2, roomHeight = 4,
     rooms = {
-        { sx = 26218, sy = 25860, sz = 0, ex = 26220, ey = 25863, ez = 0 },
-        { sx = 26218, sy = 25920, sz = 0, ex = 26220, ey = 25923, ez = 0 },
-        { sx = 26218, sy = 25980, sz = 0, ex = 26220, ey = 25983, ez = 0 },
-        { sx = 26218, sy = 26040, sz = 0, ex = 26220, ey = 26043, ez = 0 },
-        { sx = 27118, sy = 26760, sz = 0, ex = 27120, ey = 26763, ez = 0 },
-        { sx = 27118, sy = 26820, sz = 0, ex = 27120, ey = 26823, ez = 0 },
-        { sx = 27118, sy = 26880, sz = 0, ex = 27120, ey = 26883, ez = 0 },
-        { sx = 27118, sy = 26940, sz = 0, ex = 27120, ey = 26943, ez = 0 },
-        { sx = 26878, sy = 27060, sz = 0, ex = 26880, ey = 27063, ez = 0 },
-        { sx = 26878, sy = 27120, sz = 0, ex = 26880, ey = 27123, ez = 0 },
-        { sx = 26878, sy = 27180, sz = 0, ex = 26880, ey = 27183, ez = 0 },
-        { sx = 26878, sy = 27240, sz = 0, ex = 26880, ey = 27243, ez = 0 },
-        { sx = 26938, sy = 27060, sz = 0, ex = 26940, ey = 27063, ez = 0 },
-        { sx = 26938, sy = 27120, sz = 0, ex = 26940, ey = 27123, ez = 0 },
-        { sx = 26938, sy = 27180, sz = 0, ex = 26940, ey = 27183, ez = 0 },
-        { sx = 26938, sy = 27240, sz = 0, ex = 26940, ey = 27243, ez = 0 },
+        { sx = 26219, sy = 25860, sz = 0, ex = 26220, ey = 25863, ez = 0 },
+        { sx = 26219, sy = 25920, sz = 0, ex = 26220, ey = 25923, ez = 0 },
+        { sx = 26219, sy = 25980, sz = 0, ex = 26220, ey = 25983, ez = 0 },
+        { sx = 26219, sy = 26040, sz = 0, ex = 26220, ey = 26043, ez = 0 },
+        { sx = 27119, sy = 26760, sz = 0, ex = 27120, ey = 26763, ez = 0 },
+        { sx = 27119, sy = 26820, sz = 0, ex = 27120, ey = 26823, ez = 0 },
+        { sx = 27119, sy = 26880, sz = 0, ex = 27120, ey = 26883, ez = 0 },
+        { sx = 27119, sy = 26940, sz = 0, ex = 27120, ey = 26943, ez = 0 },
+        { sx = 26879, sy = 27060, sz = 0, ex = 26880, ey = 27063, ez = 0 },
+        { sx = 26879, sy = 27120, sz = 0, ex = 26880, ey = 27123, ez = 0 },
+        { sx = 26879, sy = 27180, sz = 0, ex = 26880, ey = 27183, ez = 0 },
+        { sx = 26879, sy = 27240, sz = 0, ex = 26880, ey = 27243, ez = 0 },
+        { sx = 26939, sy = 27060, sz = 0, ex = 26940, ey = 27063, ez = 0 },
+        { sx = 26939, sy = 27120, sz = 0, ex = 26940, ey = 27123, ez = 0 },
+        { sx = 26939, sy = 27180, sz = 0, ex = 26940, ey = 27183, ez = 0 },
+        { sx = 26939, sy = 27240, sz = 0, ex = 26940, ey = 27243, ez = 0 },
     }
 }
 
 -- Trailer3 (Base.TrailerKI5cargoSmall)
 PRVIR.lots["Trailer3"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -166,30 +164,30 @@ PRVIR.lots["Trailer3"] = {
 
 -- Trailer4 (Base.TrailerKI5livestock)
 PRVIR.lots["Trailer4"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 2.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
-    roomWidth = 3, roomHeight = 5,
+    roomWidth = 3, roomHeight = 6,
     rooms = {
-        { sx = 26338, sy = 25860, sz = 0, ex = 26340, ey = 25864, ez = 0 },
-        { sx = 26338, sy = 25920, sz = 0, ex = 26340, ey = 25924, ez = 0 },
-        { sx = 26338, sy = 25980, sz = 0, ex = 26340, ey = 25984, ez = 0 },
-        { sx = 26338, sy = 26040, sz = 0, ex = 26340, ey = 26044, ez = 0 },
-        { sx = 27238, sy = 26760, sz = 0, ex = 27240, ey = 26764, ez = 0 },
-        { sx = 27238, sy = 26820, sz = 0, ex = 27240, ey = 26824, ez = 0 },
-        { sx = 27238, sy = 26880, sz = 0, ex = 27240, ey = 26884, ez = 0 },
-        { sx = 27238, sy = 26940, sz = 0, ex = 27240, ey = 26944, ez = 0 },
-        { sx = 27178, sy = 27060, sz = 0, ex = 27180, ey = 27064, ez = 0 },
-        { sx = 27178, sy = 27120, sz = 0, ex = 27180, ey = 27124, ez = 0 },
-        { sx = 27178, sy = 27180, sz = 0, ex = 27180, ey = 27184, ez = 0 },
-        { sx = 27178, sy = 27240, sz = 0, ex = 27180, ey = 27244, ez = 0 },
+        { sx = 26338, sy = 25860, sz = 0, ex = 26340, ey = 25865, ez = 0 },
+        { sx = 26338, sy = 25920, sz = 0, ex = 26340, ey = 25925, ez = 0 },
+        { sx = 26338, sy = 25980, sz = 0, ex = 26340, ey = 25985, ez = 0 },
+        { sx = 26338, sy = 26040, sz = 0, ex = 26340, ey = 26045, ez = 0 },
+        { sx = 27238, sy = 26760, sz = 0, ex = 27240, ey = 26765, ez = 0 },
+        { sx = 27238, sy = 26820, sz = 0, ex = 27240, ey = 26825, ez = 0 },
+        { sx = 27238, sy = 26880, sz = 0, ex = 27240, ey = 26885, ez = 0 },
+        { sx = 27238, sy = 26940, sz = 0, ex = 27240, ey = 26945, ez = 0 },
+        { sx = 27178, sy = 27060, sz = 0, ex = 27180, ey = 27065, ez = 0 },
+        { sx = 27178, sy = 27120, sz = 0, ex = 27180, ey = 27125, ez = 0 },
+        { sx = 27178, sy = 27180, sz = 0, ex = 27180, ey = 27185, ez = 0 },
+        { sx = 27178, sy = 27240, sz = 0, ex = 27180, ey = 27245, ez = 0 },
     }
 }
 
 -- Trailer5 (Base.TrailerHome, Base.TrailerHomeExplorer)
 PRVIR.lots["Trailer5"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 3.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 3, genY = 0, genFloor = 1,
@@ -220,7 +218,7 @@ PRVIR.lots["Trailer5"] = {
 
 -- Trailer6 (Base.TrailerHomeHartman)
 PRVIR.lots["Trailer6"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 3.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 3, genY = 0, genFloor = 1,
@@ -235,7 +233,7 @@ PRVIR.lots["Trailer6"] = {
 
 -- semitrailer (Base.SemiTrailerVan)
 PRVIR.lots["semitrailer"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 3.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 3, genY = 0, genFloor = 1,
@@ -262,7 +260,7 @@ PRVIR.lots["semitrailer"] = {
 
 -- semitrailer2 (Base.SemiTrailerVanCattle)
 PRVIR.lots["semitrailer2"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 3.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 3, genY = 0, genFloor = 1,
@@ -300,7 +298,7 @@ PRVIR.lots["van1"] = {
 
 -- van2 (Base.1979rastrojeroCarni)
 PRVIR.lots["van2"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 2.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -315,7 +313,7 @@ PRVIR.lots["van2"] = {
 
 -- van3 (Base.VanATeam)
 PRVIR.lots["van3"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -330,7 +328,7 @@ PRVIR.lots["van3"] = {
 
 -- van4 (Base.Van_Azumanga)
 PRVIR.lots["van4"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -345,7 +343,7 @@ PRVIR.lots["van4"] = {
 
 -- van5 (Base.1992fiatFiorino, Base.1992fiatFiorinoArcor, Base.1992fiatFiorinoPan)
 PRVIR.lots["van5"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -364,7 +362,7 @@ PRVIR.lots["van5"] = {
 
 -- van6 (Base.StepVanIceCreamFreeze)
 PRVIR.lots["van6"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 2.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -379,7 +377,7 @@ PRVIR.lots["van6"] = {
 
 -- van7 (Base.VanJester)
 PRVIR.lots["van7"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 2.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -394,7 +392,7 @@ PRVIR.lots["van7"] = {
 
 -- van8 (Base.1990renaultTrafic variants)
 PRVIR.lots["van8"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -413,7 +411,7 @@ PRVIR.lots["van8"] = {
 
 -- van9 (Base.uaz2206, Base.uaz2208)
 PRVIR.lots["van9"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -428,7 +426,7 @@ PRVIR.lots["van9"] = {
 
 -- van10 (Base.VanLBK)
 PRVIR.lots["van10"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -443,7 +441,7 @@ PRVIR.lots["van10"] = {
 
 -- semibox (Base.SemiTruckBox)
 PRVIR.lots["semibox"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 3, genY = 0, genFloor = 1,
@@ -470,7 +468,7 @@ PRVIR.lots["semibox"] = {
 
 -- USPS (Base.USPSTruck)
 PRVIR.lots["USPS"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -489,7 +487,7 @@ PRVIR.lots["USPS"] = {
 
 -- FBI (Base.SpecialdivisionsTruckFlg, Base.SpecialdivisionsTruckFlg2)
 PRVIR.lots["FBI"] = {
-    teleportOffset = { x = -2, y = 3 },
+    teleportOffset = { x = 2.5, y = 1.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -504,7 +502,7 @@ PRVIR.lots["FBI"] = {
 
 -- FBIbomb (Base.stepvanchevybOMBSQUAD, Base.stepvanchevyFBIBOMBSQUAD)
 PRVIR.lots["FBIbomb"] = {
-    teleportOffset = { x = -2, y = 3 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -519,7 +517,7 @@ PRVIR.lots["FBIbomb"] = {
 
 -- FBIf700bomb (Base.f700boxbombsquadLG)
 PRVIR.lots["FBIf700bomb"] = {
-    teleportOffset = { x = -2, y = 3 },
+    teleportOffset = { x = 1.5, y = 3.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 3, genY = 0, genFloor = 1,
@@ -534,7 +532,7 @@ PRVIR.lots["FBIf700bomb"] = {
 
 -- FBIhq2 (Base.86econolinervFBIMHQLG)
 PRVIR.lots["FBIhq2"] = {
-    teleportOffset = { x = -1, y = 2 },
+    teleportOffset = { x = 2.5, y = 2.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -549,7 +547,7 @@ PRVIR.lots["FBIhq2"] = {
 
 -- FBIhazard2 (Base.86bounderHAzardmaterials)
 PRVIR.lots["FBIhazard2"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 2.5, y = 6.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -564,7 +562,7 @@ PRVIR.lots["FBIhazard2"] = {
 
 -- tstrailer (Base.TrailerTSMega)
 PRVIR.lots["tstrailer"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 3.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 3, genY = 0, genFloor = 1,
@@ -591,7 +589,7 @@ PRVIR.lots["tstrailer"] = {
 
 -- tstraileranimal (Base.TrailerTSMegaAnimal)
 PRVIR.lots["tstraileranimal"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 3.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -614,7 +612,7 @@ PRVIR.lots["tstraileranimal"] = {
 
 -- unimogtrailerr (Base.UnimogTrailer)
 PRVIR.lots["unimogtrailerr"] = {
-    teleportOffset = { x = 0, y = 2 },
+    teleportOffset = { x = 2.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -633,7 +631,7 @@ PRVIR.lots["unimogtrailerr"] = {
 
 -- atavanderumba (Base.ATA_VanDeRumba)
 PRVIR.lots["atavanderumba"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -648,7 +646,7 @@ PRVIR.lots["atavanderumba"] = {
 
 -- van (Base.BasicVan)
 PRVIR.lots["van"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -663,7 +661,7 @@ PRVIR.lots["van"] = {
 
 -- ki5van (63Type2Van)
 PRVIR.lots["ki5van"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -678,7 +676,7 @@ PRVIR.lots["ki5van"] = {
 
 -- ki5bus (Base.87fordB700school)
 PRVIR.lots["ki5bus"] = {
-    teleportOffset = { x = 0, y = 10 },
+    teleportOffset = { x = 1.5, y = 10.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 3, genY = 0, genFloor = 1,
@@ -701,7 +699,7 @@ PRVIR.lots["ki5bus"] = {
 
 -- ki5truck (Base.87fordF700box)
 PRVIR.lots["ki5truck"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 0.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 3, genY = 0, genFloor = 1,
@@ -734,7 +732,7 @@ PRVIR.lots["ki5truck"] = {
 
 -- ki5swat (Base.87fordF700swat)
 PRVIR.lots["ki5swat"] = {
-    teleportOffset = { x = 0, y = 2 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -749,7 +747,7 @@ PRVIR.lots["ki5swat"] = {
 
 -- ki5stepvan (Base.85chevyStepVan variants)
 PRVIR.lots["ki5stepvan"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 2.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -772,7 +770,7 @@ PRVIR.lots["ki5stepvan"] = {
 
 -- ki590fordambu (Base.90fordF350ambulance)
 PRVIR.lots["ki590fordambu"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 2.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -791,7 +789,7 @@ PRVIR.lots["ki590fordambu"] = {
 
 -- ki586ford (Base.86fordE150 variants)
 PRVIR.lots["ki586ford"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -826,22 +824,22 @@ PRVIR.lots["ki586ford"] = {
 
 -- ki5cf800 (Base.93fordElgin, Base.93fordElginSpec)
 PRVIR.lots["ki5cf800"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 2.5  , y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
-    roomWidth = 3, roomHeight = 4,
+    roomWidth = 3, roomHeight = 2,
     rooms = {
-        { sx = 26278, sy = 26760, sz = 30, ex = 26280, ey = 26763, ez = 30 },
-        { sx = 26278, sy = 26820, sz = 30, ex = 26280, ey = 26823, ez = 30 },
-        { sx = 26278, sy = 26880, sz = 30, ex = 26280, ey = 26883, ez = 30 },
-        { sx = 26278, sy = 26940, sz = 30, ex = 26280, ey = 26943, ez = 30 },
+        { sx = 26278, sy = 26760, sz = 30, ex = 26280, ey = 26761, ez = 30 },
+        { sx = 26278, sy = 26820, sz = 30, ex = 26280, ey = 26821, ez = 30 },
+        { sx = 26278, sy = 26880, sz = 30, ex = 26280, ey = 26881, ez = 30 },
+        { sx = 26278, sy = 26940, sz = 30, ex = 26280, ey = 26941, ez = 30 },
     }
 }
 
 -- ki5container (Base.isoContainer2, Base.isoContainer4, Base.isoContainer5)
 PRVIR.lots["ki5container"] = {
-    teleportOffset = { x = 0, y = 3 },
+    teleportOffset = { x = 2.5, y = 6.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -860,7 +858,7 @@ PRVIR.lots["ki5container"] = {
 
 -- scooby (Base.VanMysteryMachine)
 PRVIR.lots["scooby"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -875,7 +873,7 @@ PRVIR.lots["scooby"] = {
 
 -- tsarbus (Base.ATAApocalypseBus)
 PRVIR.lots["tsarbus"] = {
-    teleportOffset = { x = 0, y = 8 },
+    teleportOffset = { x = 1.5, y = 8.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 3, genY = 0, genFloor = 1,
@@ -894,7 +892,7 @@ PRVIR.lots["tsarbus"] = {
 
 -- tsarbus2 (Base.ATASchoolBus)
 PRVIR.lots["tsarbus2"] = {
-    teleportOffset = { x = 0, y = 8 },
+    teleportOffset = { x = 1.5, y = 8.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 3, genY = 0, genFloor = 1,
@@ -913,7 +911,7 @@ PRVIR.lots["tsarbus2"] = {
 
 -- amazomvan (Base.aMOOzonVan)
 PRVIR.lots["amazomvan"] = {
-    teleportOffset = { x = 0, y = 3 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -928,7 +926,7 @@ PRVIR.lots["amazomvan"] = {
 
 -- Vanillastepvan (Base.StepVan variants)
 PRVIR.lots["Vanillastepvan"] = {
-    teleportOffset = { x = 0, y = 0 },
+    teleportOffset = { x = 2.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -961,7 +959,7 @@ PRVIR.lots["Vanillastepvan"] = {
 
 -- Vanillastepvanmail (Base.StepVanMail)
 PRVIR.lots["Vanillastepvanmail"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 2.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -976,7 +974,7 @@ PRVIR.lots["Vanillastepvanmail"] = {
 
 -- Vanillastepswat (Base.StepVan_LouisvilleSWAT)
 PRVIR.lots["Vanillastepswat"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 2.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -991,7 +989,7 @@ PRVIR.lots["Vanillastepswat"] = {
 
 -- Vanillastepplonkies (Base.StepVan_Plonkies)
 PRVIR.lots["Vanillastepplonkies"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 2.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -1006,7 +1004,7 @@ PRVIR.lots["Vanillastepplonkies"] = {
 
 -- Vanillastepscarlet (Base.StepVan_Scarlet)
 PRVIR.lots["Vanillastepscarlet"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 2.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -1019,39 +1017,9 @@ PRVIR.lots["Vanillastepscarlet"] = {
     }
 }
 
--- Vanillastepvansmartkut (Base.StepVan_SmartKut)
-PRVIR.lots["Vanillastepvansmartkut"] = {
-    teleportOffset = { x = 0, y = 1 },
-    requiresSeat = false, requiresTrunk = true,
-    trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
-    genX = 2, genY = 0, genFloor = 1,
-    roomWidth = 3, roomHeight = 4,
-    rooms = {
-        { sx = 27358, sy = 26460, sz = 0, ex = 27360, ey = 26463, ez = 0 },
-        { sx = 27358, sy = 26520, sz = 0, ex = 27360, ey = 26523, ez = 0 },
-        { sx = 27358, sy = 26580, sz = 0, ex = 27360, ey = 26583, ez = 0 },
-        { sx = 27358, sy = 26640, sz = 0, ex = 27360, ey = 26643, ez = 0 },
-    }
-}
-
--- Vanillamobilelibrasry (Base.StepVan_MobileLibrary)
-PRVIR.lots["Vanillamobilelibrasry"] = {
-    teleportOffset = { x = 0, y = 1 },
-    requiresSeat = false, requiresTrunk = true,
-    trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
-    genX = 2, genY = 0, genFloor = 1,
-    roomWidth = 3, roomHeight = 4,
-    rooms = {
-        { sx = 27418, sy = 26460, sz = 0, ex = 27420, ey = 26463, ez = 0 },
-        { sx = 27418, sy = 26520, sz = 0, ex = 27420, ey = 26523, ez = 0 },
-        { sx = 27418, sy = 26580, sz = 0, ex = 27420, ey = 26583, ez = 0 },
-        { sx = 27418, sy = 26640, sz = 0, ex = 27420, ey = 26643, ez = 0 },
-    }
-}
-
 -- vanillavan (Base.Van and many variants)
 PRVIR.lots["vanillavan"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -1090,7 +1058,7 @@ PRVIR.lots["vanillavan"] = {
 
 -- Vanambulance (Base.VanAmbulance)
 PRVIR.lots["Vanambulance"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -1109,7 +1077,7 @@ PRVIR.lots["Vanambulance"] = {
 
 -- VanMAIL3 (Base.VanMail)
 PRVIR.lots["VanMAIL3"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -1124,7 +1092,7 @@ PRVIR.lots["VanMAIL3"] = {
 
 -- VanRADIO (Base.VanRadio, Base.VanRadio_3N)
 PRVIR.lots["VanRADIO"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -1139,7 +1107,7 @@ PRVIR.lots["VanRADIO"] = {
 
 -- VanaSPIFFO2 (Base.VanSpiffo)
 PRVIR.lots["VanaSPIFFO2"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -1154,7 +1122,7 @@ PRVIR.lots["VanaSPIFFO2"] = {
 
 -- Vanbeerrr (Base.Van_Charlemange_Beer, Base.Van_KnoxDisti)
 PRVIR.lots["Vanbeerrr"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -1169,7 +1137,7 @@ PRVIR.lots["Vanbeerrr"] = {
 
 -- Vanampotato (Base.Van_Perfick_Potato)
 PRVIR.lots["Vanampotato"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -1184,7 +1152,7 @@ PRVIR.lots["Vanampotato"] = {
 
 -- 73winne (Base.73Winnebago)
 PRVIR.lots["73winne"] = {
-    teleportOffset = { x = 0, y = 5 },
+    teleportOffset = { x = 1.5 y = 5.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -1201,7 +1169,7 @@ PRVIR.lots["73winne"] = {
 
 -- 89defender (Base.89defender variants)
 PRVIR.lots["89defender"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -1220,7 +1188,7 @@ PRVIR.lots["89defender"] = {
 
 -- motoriusambulance (Base.fhq92EconolineAmbulance variants)
 PRVIR.lots["motoriusambulance"] = {
-    teleportOffset = { x = -1, y = 2 },
+    teleportOffset = { x = 0.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -1239,7 +1207,7 @@ PRVIR.lots["motoriusambulance"] = {
 
 -- motoriusambulance2 (Base.fhq92EconolineT3Ambulance)
 PRVIR.lots["motoriusambulance2"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 1.5, y = 2.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -1258,7 +1226,7 @@ PRVIR.lots["motoriusambulance2"] = {
 
 -- VWT2T1 (Base.fhqVWT2T1, Base.fhqVWT2T1Livery)
 PRVIR.lots["VWT2T1"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -1277,7 +1245,7 @@ PRVIR.lots["VWT2T1"] = {
 
 -- mvan92econolinenormalvans (Base.fhq92Econoline variants)
 PRVIR.lots["mvan92econolinenormalvans"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -1304,7 +1272,7 @@ PRVIR.lots["mvan92econolinenormalvans"] = {
 
 -- mvan92econoline (Base.fhq92EconolineXL, Base.fhq92EconolineXLPanel)
 PRVIR.lots["mvan92econoline"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -1331,7 +1299,7 @@ PRVIR.lots["mvan92econoline"] = {
 
 -- motoriusbus2 (Base.fhqB10M, Base.fhqB10M_Riv)
 PRVIR.lots["motoriusbus2"] = {
-    teleportOffset = { x = -1, y = 8 },
+    teleportOffset = { x = 1.5, y = 8.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -1350,7 +1318,7 @@ PRVIR.lots["motoriusbus2"] = {
 
 -- fhq90SuzEvery (Base.fhq90SuzEvery)
 PRVIR.lots["fhq90SuzEvery"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -1365,7 +1333,7 @@ PRVIR.lots["fhq90SuzEvery"] = {
 
 -- ki5ambulancemed (Base.86fordE150med)
 PRVIR.lots["ki5ambulancemed"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -1383,7 +1351,7 @@ PRVIR.lots["ki5ambulancemed"] = {
 
 -- traileranimalhorsebox (Base.Trailer_Horsebox)
 PRVIR.lots["traileranimalhorsebox"] = {
-    teleportOffset = { x = 0, y = 3 },
+    teleportOffset = { x = 1.5, y = 2.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 1, genY = 0, genFloor = 1,
@@ -1398,7 +1366,7 @@ PRVIR.lots["traileranimalhorsebox"] = {
 
 -- traileranimallivestock (Base.Trailer_Livestock)
 PRVIR.lots["traileranimallivestock"] = {
-    teleportOffset = { x = 0, y = 3 },
+    teleportOffset = { x = 2.5, y = 3.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -1413,7 +1381,7 @@ PRVIR.lots["traileranimallivestock"] = {
 
 -- CDClabor (Base.f700boxshellCDCSEV)
 PRVIR.lots["CDClabor"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 2.5, y = 6.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 2, genY = 0, genFloor = 1,
@@ -1428,7 +1396,7 @@ PRVIR.lots["CDClabor"] = {
 
 -- camptrailer2 (Base.Trailer87Scamp16)
 PRVIR.lots["camptrailer2"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 3.5, y = 1.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 3, genY = 0, genFloor = 1,
@@ -1447,7 +1415,7 @@ PRVIR.lots["camptrailer2"] = {
 
 -- camptrailer (Base.Trailer87Scamp13)
 PRVIR.lots["camptrailer"] = {
-    teleportOffset = { x = 0, y = 1 },
+    teleportOffset = { x = 3.5, y = 1.5 },
     requiresSeat = false, requiresTrunk = true,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 3, genY = 0, genFloor = 1,

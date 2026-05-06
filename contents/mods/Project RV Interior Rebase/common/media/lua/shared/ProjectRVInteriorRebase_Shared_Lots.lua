@@ -20,7 +20,7 @@ PRVIR.lots["3x7empty"] = PRVIR.lots["3x7empty"] or {}
 PRVIR.lots["4x12colossal"] = PRVIR.lots["4x12colossal"] or {}
 
 PRVIR.lots.small = {
-    teleportOffset = { x = 1, y = 1 },
+    teleportOffset = { x = 0.5, y = 0.5 },
     requiresSeat = true,
     requiresTrunk = false,
     genX = 0,
@@ -47,7 +47,7 @@ PRVIR.lots.small.rooms = (function()
 end)()
 
 PRVIR.lots.normal = {
-    teleportOffset = { x = 1, y = 1 },
+    teleportOffset = { x = 0.5, y = 0.5 },
     requiresSeat = false,
     requiresTrunk = true,
     trunkParts = {
@@ -77,7 +77,7 @@ PRVIR.lots.normal.rooms = (function()
 end)()
 
 PRVIR.lots.bus = {
-    teleportOffset = { x = 1, y = 1 },
+    teleportOffset = { x = 1.5, y = 0.5 },
     requiresSeat = true,
     requiresTrunk = false,
     genX = 0,
@@ -104,7 +104,7 @@ PRVIR.lots.bus.rooms = (function()
 end)()
 
 PRVIR.lots["3x2caravan"] = {
-    teleportOffset = { x = 1, y = 1 },
+    teleportOffset = { x = 1.5, y = 1.5 },
     requiresSeat = true,
     requiresTrunk = false,
     genX = 0,
@@ -131,7 +131,7 @@ PRVIR.lots["3x2caravan"].rooms = (function()
 end)()
 
 PRVIR.lots["3x6caravan"] = {
-    teleportOffset = { x = 2, y = 2 },
+    teleportOffset = { x = 1.5, y = 5.5 },
     requiresSeat = true,
     requiresTrunk = false,
     genX = 0,
@@ -158,7 +158,7 @@ PRVIR.lots["3x6caravan"].rooms = (function()
 end)()
 
 PRVIR.lots["3x7empty"] = {
-    teleportOffset = { x = 1, y = 1 },
+    teleportOffset = { x = 0.5, y = 0.5 },
     requiresSeat = false,
     requiresTrunk = true,
     trunkParts = {
@@ -194,7 +194,7 @@ PRVIR.lots["3x7empty"].rooms = (function()
 end)()
 
 PRVIR.lots["4x12colossal"] = {
-    teleportOffset = { x = 1, y = 1 },
+    teleportOffset = { x = 0.5, y = 0.5 },
     requiresSeat = false,
     requiresTrunk = true,
     trunkParts = {
