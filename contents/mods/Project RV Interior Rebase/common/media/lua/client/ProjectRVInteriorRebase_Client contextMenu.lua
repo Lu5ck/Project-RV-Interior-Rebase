@@ -209,6 +209,7 @@ function PRVIR.doAdminInfoTooltip(context, vehicleID, lotID, square)
     infoText = infoText .. "Assigned = " .. (lot and lot.AssignedDateTime and os.date("%d-%b-%y, %H:%M:%S", lot.AssignedDateTime) or "") .. "\n"
     infoText = infoText .. "Last Visited = " .. (lot and lot.LastVisitedDateTime and os.date("%d-%b-%y, %H:%M:%S", lot.LastVisitedDateTime) or "") .. "\n"
 
+    --[[
     local squareInfo = "NIL"
     if square then
         if square:getModData().PRVIR_LotID then
@@ -218,6 +219,7 @@ function PRVIR.doAdminInfoTooltip(context, vehicleID, lotID, square)
         end
     end
     infoText = infoText .. "Sq ModData = " .. squareInfo
+    ]]--
 
     infoText = infoText .. "\nVehicle info\n"
     infoText = infoText .. "ID = " .. (vehicleID or "") .. "\n"

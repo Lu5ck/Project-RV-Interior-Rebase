@@ -18,11 +18,14 @@ function PRVIR.getPlayerAtWhichLot(playerObj)
                             for i, room in ipairs(lotData.rooms) do
                                 if px >= room.sx and px <= room.ex and py >= room.sy and py <= room.ey and pz >= room.sz and pz <= room.ez then
                                     local lotID = lotName .. "_" .. i
+                                    -- Doesn't work, square can't store getModData()
+                                    --[[
                                     if isClient() and not isServer() then
                                         sendClientCommand(player, "PRVIR", "updateSquareModData", { squareX = px, squareY = py, squareZ = pz, lotID = lotID })
                                     else
                                         PRVIR.updateSquareModData(playerObj, { squareX = px, squareY = py, squareZ = pz, lotID = lotID })
                                     end
+                                    ]]--
                                     return lotID
                                 end
                             end

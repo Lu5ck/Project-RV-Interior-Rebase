@@ -208,11 +208,13 @@ function PRVIR.linkVehicleLot(playerObj, args)
 
 end
 
+-- Doesn't work, square can't store getModData()
 function PRVIR.updateSquareModData(playerObj, args)
 	if not args.squareX or not args.squareY or not args.squareZ or not args.lotID then return end
 	local square = getSquare(args.squareX, args.squareY, args.squareZ)
 	if square then
 		square:getModData().PRVIR_LotID = args.lotID
+		square:transmitModData()
 	end
 end
 
