@@ -1397,7 +1397,7 @@ PRVIR.lots["CDClabor"] = {
 -- camptrailer2 (Base.Trailer87Scamp16)
 PRVIR.lots["camptrailer2"] = {
     teleportOffset = { x = 3.5, y = 1.5 },
-    requiresSeat = false, requiresTrunk = true,
+    requiresSeat = true, requiresTrunk = false,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 3, genY = 0, genFloor = 1,
     roomWidth = 4, roomHeight = 5,
@@ -1416,7 +1416,7 @@ PRVIR.lots["camptrailer2"] = {
 -- camptrailer (Base.Trailer87Scamp13)
 PRVIR.lots["camptrailer"] = {
     teleportOffset = { x = 3.5, y = 1.5 },
-    requiresSeat = false, requiresTrunk = true,
+    requiresSeat = true, requiresTrunk = false,
     trunkParts = { TrunkDoor = true, DoorRear = true, DoorRearLeft = true, DoorRearRight = true },
     genX = 3, genY = 0, genFloor = 1,
     roomWidth = 4, roomHeight = 6,

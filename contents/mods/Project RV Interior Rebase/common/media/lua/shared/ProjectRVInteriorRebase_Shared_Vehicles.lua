@@ -449,6 +449,8 @@ PRVIR.vehiclesData["base.ATA_VanDeRumbaEyeSky"] = "3x2caravan"
 PRVIR.vehiclesData["Base.ATA_VanDeRumbaMS"] = "3x2caravan"
 PRVIR.vehiclesData["Base.ATA_VanDeRumbaLittleLiuDuck"] = "3x2caravan"
 PRVIR.vehiclesData["Base.Trailer87Scamp13"] = "3x2caravan"
+PRVIR.vehiclesData["Base.Trailer87Scamp16"] = "3x2caravan"
+PRVIR.vehiclesData["Base.Trailer61Bambi16"] = "3x2caravan"
 
 -- 3x6caravan
 PRVIR.vehiclesData["Base.UnimogTrailer"] = "3x6caravan"
@@ -462,7 +464,8 @@ PRVIR.vehiclesData["Base.pzkBounder86"] = "3x6caravan"
 PRVIR.vehiclesData["Base.pzkChieftain73"] = "3x6caravan"
 PRVIR.vehiclesData["Base.FleetwoodLab"] = "3x6caravan"
 PRVIR.vehiclesData["Base.Trailerpart22"] = "3x6caravan"
-PRVIR.vehiclesData["Base.Trailer87Scamp16"] = "3x6caravan"
+PRVIR.vehiclesData["Base.ww_fo_89eseries_camper"] = "3x6caravan"
+PRVIR.vehiclesData["Base.Trailer54FlyingCloud22"] = "3x6caravan"
 
 -- 3x7empty
 PRVIR.vehiclesData["Base.87fordF700box"] = "3x7empty"
