@@ -1,4 +1,5 @@
 workshop.txt
+workshop1.txt
 *-workspace
 tasks.json
 test.txt
@@ -6,3 +7,4 @@ test.txt
 test1.txt
 tests.txt
 test2.txt
+backup/*
